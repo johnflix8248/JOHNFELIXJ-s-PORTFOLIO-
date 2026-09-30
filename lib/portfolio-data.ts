@@ -18,7 +18,7 @@ export const profile = {
 
 export const stats = [
   { value: "2+", label: "Internships" },
-  { value: "5", label: "Certifications" },
+  { value: "6", label: "Certifications" },
   { value: "8.34", label: "CGPA · B.Tech" },
 ]
 
@@ -174,7 +174,14 @@ export const projects = [
   },
 ]
 
-export const certifications = [
+export type Certification = {
+  title: string
+  issuer: string
+  date: string
+  caption?: string
+}
+
+export const certifications: Certification[] = [
   {
     title: "Python Full-Stack Internship Completion",
     issuer: "Wyntrix Innovations (OPC) Pvt. Ltd.",
@@ -184,6 +191,13 @@ export const certifications = [
     title: "Data Science Internship Completion",
     issuer: "Cognifyz Technologies",
     date: "Dec 2025",
+  },
+  {
+    title: "Infosys – PALS TechZooka Hackathon 2025",
+    issuer: "PALS in collaboration with Infosys",
+    caption:
+      "Participated with Team TEXH-MONARCH, contributing to the 'AssistEd' AI challenge to build impactful AI solutions.",
+    date: "2025",
   },
   {
     title: "Cyber Security MasterClass",
