@@ -27,6 +27,9 @@ export function Certifications() {
                 <div className="min-w-0">
                   <p className="font-display font-semibold leading-snug text-balance">{certification.title}</p>
                   <p className="mt-1 text-sm text-muted">{certification.issuer}</p>
+                  {certification.caption ? (
+                    <p className="mt-1.5 text-xs leading-relaxed text-muted/90">{certification.caption}</p>
+                  ) : null}
                   <p className="mt-2 text-xs uppercase tracking-[0.14em] text-muted">{certification.date}</p>
                 </div>
               </div>
